@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/company-web-site/static/js/main.0da3b844.chunk.js",
+    "main.js.map": "/company-web-site/static/js/main.0da3b844.chunk.js.map",
+    "runtime-main.js": "/company-web-site/static/js/runtime-main.f60751b9.js",
+    "runtime-main.js.map": "/company-web-site/static/js/runtime-main.f60751b9.js.map",
+    "static/js/2.2f3a0fa4.chunk.js": "/company-web-site/static/js/2.2f3a0fa4.chunk.js",
+    "static/js/2.2f3a0fa4.chunk.js.map": "/company-web-site/static/js/2.2f3a0fa4.chunk.js.map",
+    "index.html": "/company-web-site/index.html",
+    "precache-manifest.3ac9e8a38327fff1070362d64748fd1d.js": "/company-web-site/precache-manifest.3ac9e8a38327fff1070362d64748fd1d.js",
+    "service-worker.js": "/company-web-site/service-worker.js",
+    "static/js/2.2f3a0fa4.chunk.js.LICENSE.txt": "/company-web-site/static/js/2.2f3a0fa4.chunk.js.LICENSE.txt",
+    "static/media/blog-message.jpg": "/company-web-site/static/media/blog-message.714a22b7.jpg",
+    "static/media/bot-message.svg": "/company-web-site/static/media/bot-message.7fa40f08.svg",
+    "static/media/computer-app.svg": "/company-web-site/static/media/computer-app.ba3b2091.svg",
+    "static/media/contact-us.jpg": "/company-web-site/static/media/contact-us.d8c3a1ac.jpg",
+    "static/media/cplusplus.svg": "/company-web-site/static/media/cplusplus.5be9bde4.svg",
+    "static/media/flutter.svg": "/company-web-site/static/media/flutter.09ded833.svg",
+    "static/media/golang.svg": "/company-web-site/static/media/golang.8fc5db97.svg",
+    "static/media/java.svg": "/company-web-site/static/media/java.13a09653.svg",
+    "static/media/javascript.svg": "/company-web-site/static/media/javascript.61ed8b05.svg",
+    "static/media/laptop.svg": "/company-web-site/static/media/laptop.9007002d.svg",
+    "static/media/mobile-app.svg": "/company-web-site/static/media/mobile-app.bfd97489.svg",
+    "static/media/react.svg": "/company-web-site/static/media/react.4009eef3.svg",
+    "static/media/reactJS-logo.svg": "/company-web-site/static/media/reactJS-logo.dacc0110.svg",
+    "static/media/vanilla-logo.svg": "/company-web-site/static/media/vanilla-logo.7a3bfdff.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f60751b9.js",
+    "static/js/2.2f3a0fa4.chunk.js",
+    "static/js/main.0da3b844.chunk.js"
+  ]
+}
