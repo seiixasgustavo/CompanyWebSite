@@ -10,6 +10,8 @@ import {
   CardMedia,
 } from "@material-ui/core";
 
+import {Link} from "react-router-dom";
+
 import ContactUsImage from "../images/contact-us.jpg";
 import BlogImage from "../images/blog-message.jpg";
 
@@ -44,9 +46,14 @@ export default () => {
                 }}
               />
               <div style={{width: "100%", textAlign: "center"}}>
-                <Button variant="outlined" style={{margin: "auto"}}>
-                  Access
-                </Button>
+                <Link
+                  to="/blog"
+                  style={{color: "inherit", textDecoration: "inherit"}}
+                >
+                  <Button variant="outlined" style={{margin: "auto"}}>
+                    Access
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -74,9 +81,14 @@ export default () => {
                 }}
               />
               <div style={{width: "100%", textAlign: "center"}}>
-                <Button variant="outlined" style={{margin: "auto"}}>
-                  Access
-                </Button>
+                <Link
+                  to="/contactus"
+                  style={{color: "inherit", textDecoration: "inherit"}}
+                >
+                  <Button variant="outlined" style={{margin: "auto"}}>
+                    Access
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>

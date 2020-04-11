@@ -10,6 +10,8 @@ import {
   Button,
 } from "@material-ui/core";
 
+import {Link} from "react-router-dom";
+
 import ReactJSLogo from "../images/reactJS-logo.svg";
 import BotMessageLogo from "../images/bot-message.svg";
 import VanillaWebsiteLogo from "../images/vanilla-logo.svg";
@@ -20,7 +22,12 @@ export default () => {
     <div className={styles.portfolioContainer}>
       <div className={styles.portfolioTextContainer}>
         <Typography variant="h3">Portfolio</Typography>
-        <Button style={{padding: 0}}>See more</Button>
+        <Link
+          to="/portfolio"
+          style={{color: "inherit", textDecoration: "inherit"}}
+        >
+          <Button style={{padding: 0}}>See more</Button>
+        </Link>
         <Divider
           style={{
             width: "5%",
@@ -159,9 +166,12 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "200px",
     minHeight: "500px",
     textAlign: "center",
+    padding: "20px 0",
   },
   cardImage: {
-    height: "300px",
+    width: "300px",
+    height: "auto",
     margin: "5px auto",
+    minHeight: "300px",
   },
 }));

@@ -9,9 +9,11 @@ import {
   CardMedia,
   CardContent,
 } from "@material-ui/core";
+
+import {Link} from "react-router-dom";
+
 import ComputerAppLogo from "../images/computer-app.svg";
 import MobileAppLogo from "../images/mobile-app.svg";
-
 import ReactJSLogo from "../images/reactJS-logo.svg";
 
 export default () => {
@@ -20,7 +22,12 @@ export default () => {
     <div className={styles.productsContainer}>
       <div className={styles.productsTextContainer}>
         <Typography variant="h3">Products</Typography>
-        <Button style={{padding: 0}}>See more</Button>
+        <Link
+          to="/portfolio"
+          style={{color: "inherit", textDecoration: "inherit"}}
+        >
+          <Button style={{padding: 0}}>See more</Button>
+        </Link>
         <Divider
           style={{
             width: "5%",
@@ -57,15 +64,7 @@ export default () => {
         >
           <Grid item xs>
             <Card className={styles.cardStyle}>
-              <CardMedia
-                image={MobileAppLogo}
-                style={{
-                  width: "300px",
-                  height: "auto",
-                  margin: "5px auto",
-                  minHeight: "300px",
-                }}
-              />
+              <CardMedia image={MobileAppLogo} className={styles.cardImage} />
               <Divider style={{width: "50%", margin: "10px auto"}} />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -81,15 +80,7 @@ export default () => {
           </Grid>
           <Grid item xs>
             <Card className={styles.cardStyle}>
-              <CardMedia
-                image={ReactJSLogo}
-                style={{
-                  width: "300px",
-                  height: "auto",
-                  margin: "5px auto",
-                  minHeight: "300px",
-                }}
-              />
+              <CardMedia image={ReactJSLogo} className={styles.cardImage} />
               <Divider style={{width: "50%", margin: "10px auto"}} />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -150,9 +141,12 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "200px",
     minHeight: "500px",
     textAlign: "center",
+    padding: "20px 0",
   },
   cardImage: {
-    height: "300px",
+    width: "300px",
+    height: "auto",
     margin: "5px auto",
+    minHeight: "300px",
   },
 }));

@@ -5,6 +5,7 @@ import {
   TextField,
   Button,
   makeStyles,
+  Grid,
 } from "@material-ui/core";
 
 export default () => {
@@ -43,45 +44,44 @@ export default () => {
           <Divider style={{width: "50%", margin: "40px auto"}} />
         </div>
       </div>
-      <form style={{width: "100%", textAlign: "center"}}>
-        <div
-          style={{
-            width: "80%",
-            margin: "auto",
-            justifyContent: "center",
-            display: "flex",
-            paddingBottom: "60px",
-          }}
-        >
-          <div style={{padding: "0 20px"}}>
-            <TextField
-              id="standard-required1"
-              variant="outlined"
-              label="Email"
-              placeholder="Hello World"
-            />
-          </div>
-          <div style={{padding: "0 20px"}}>
-            <TextField
-              id="standard-required2"
-              variant="outlined"
-              label="Linkedin"
-              placeholder="Hello World"
-            />
-          </div>
-          <div style={{padding: "0 20px"}}>
-            <TextField
-              id="standard-required3"
-              variant="outlined"
-              label="Github"
-              placeholder="Hello World"
-            />
-          </div>
-        </div>
-        <Button style={{width: "10%"}} variant="outlined">
-          Send
-        </Button>
-      </form>
+      <Grid
+        container
+        spacing={5}
+        style={{width: "100%", textAlign: "center", padding: "0 10%"}}
+      >
+        <Grid item xs>
+          <TextField
+            style={{width: "50%", minWidth: "300px"}}
+            id="standard-required1"
+            variant="outlined"
+            label="Email"
+            placeholder="Hello World"
+          />
+        </Grid>
+        <Grid item xs>
+          <TextField
+            style={{width: "50%", minWidth: "300px"}}
+            id="standard-required2"
+            variant="outlined"
+            label="Linkedin"
+            placeholder="Hello World"
+          />
+        </Grid>
+        <Grid item xs>
+          <TextField
+            style={{width: "50%", minWidth: "300px"}}
+            id="standard-required3"
+            variant="outlined"
+            label="Github"
+            placeholder="Hello World"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Button style={{width: "20%"}} variant="outlined" disabled>
+            Send
+          </Button>
+        </Grid>
+      </Grid>
     </div>
   );
 };

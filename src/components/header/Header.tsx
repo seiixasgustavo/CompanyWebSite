@@ -7,8 +7,11 @@ import {
   IconButton,
   Toolbar,
   useScrollTrigger,
-  Typography
+  Typography,
 } from "@material-ui/core";
+
+import DrawerContainer from "../drawer/Drawer";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
@@ -17,7 +20,7 @@ export default () => {
   const trigger = useScrollTrigger();
   const styles = useStyles();
   const [state, setState] = React.useState({
-    open: false
+    open: false,
   });
 
   const toggleDrawer = (open: boolean) => (
@@ -63,24 +66,31 @@ export default () => {
         </Toolbar>
       </AppBar>
       <Drawer open={state.open} onClose={toggleDrawer(false)}>
-        <div className={styles.drawer}></div>
+        <DrawerContainer closeDrawer={toggleDrawer(false)} />
       </Drawer>
     </React.Fragment>
   );
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "white"
+    backgroundColor: "white",
   },
   drawer: {
     width: "25%",
     minWidth: "300px",
     height: "100%",
-    backgroundColor: "white"
+    backgroundColor: "white",
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: "black"
-  }
+    color: "black",
+  },
+  list: {
+    width: "100%",
+  },
+  avatarLarge: {
+    width: theme.spacing(6),
+    height: theme.spacing(6),
+  },
 }));
