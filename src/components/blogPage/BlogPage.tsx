@@ -64,7 +64,7 @@ export default () => {
       icon: Javascript,
     },
     {
-      title: "Mobile Frameworks Section",
+      title: "Mobile Frameworks",
       icon: Flutter,
     },
     {
